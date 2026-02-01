@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#e0f7fa" />
+      <stop offset="100%" stop-color="#f1f8e9" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)" />
+  <g opacity="0.08" fill="#000">
+    <circle cx="120" cy="120" r="80" />
+    <circle cx="420" cy="80" r="90" />
+    <circle cx="660" cy="180" r="70" />
+  </g>
+  <g fill="none" stroke="#2b6cb0" stroke-width="2" opacity="0.12">
+    <path d="M0 360 Q120 320 240 360 T480 360 T720 360 T960 360" />
+  </g>
+  <g transform="translate(40,260)" opacity="0.12">
+    <rect x="0" y="0" width="160" height="80" rx="12" fill="none" stroke="#2b6cb0" />
+    <rect x="200" y="-10" width="220" height="100" rx="12" fill="none" stroke="#2b6cb0" />
+    <rect x="460" y="0" width="220" height="80" rx="12" fill="none" stroke="#2b6cb0" />
+  </g>
+  <text x="50%" y="92%" text-anchor="middle" fill="#7a7a7a" font-size="12">Princess Voyage — Ticket background</text>
+</svg>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiement - Princess Voyage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="payment-box">
+    <h2>💳 Confirmation Paiement</h2>
+    <p>Veuillez vérifier votre compte et entrer votre mot de passe Mobile Money / Orange Money pour confirmer le retrait de <strong>4000 XAF</strong>.</p>
+    
+    <form id="paymentForm">
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" required>
+      <button type="submit">Confirmer</button>
+    </form>
+
+    <!-- Simulation of SMS -->
+    <div id="smsBox" class="hidden">
+      <p> SMS envoyé au numéro <span id="smsNumber"></span> :</p>
+      <p><em>Confirmez le retrait de 4000 XAF pour votre ticket Princess Voyage.</em></p>
+    </div>
+  </section>
+
+  <script src="payment.js"></script>
+</body>
+</html>

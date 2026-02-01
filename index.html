@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Princess Voyage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-images">
+            <img src="princess v1.jpeg" alt="Image 1" class="left">
+            <img src="princess v3.jpeg" alt="Image 2" class="middle">
+        </div>
+        <h1>Bienvenue Chez</h1>
+        <h2>Princess Voyage</h2>
+        <p>Réservez vos billets en ligne facilement</p>
+    </header>
+<!--Bus time table-->
+    <section class="timetable">
+        <h3>Horaires des bus</h3>
+        <table>
+            <tr>
+                <th>Départ</th>
+                <th>Destination</th>
+                <th>Heure</th>
+            </tr>
+            <tr>
+                <td>Douala</td>
+                <td>Yaoundé</td>
+                <td>08:00</td>
+            </tr>
+            <tr>
+                <td>Yaounde</td>
+                <td>Douala</td>
+                <td>14:00</td>
+            </tr>
+        </table>
+    </section>
+
+    <main>
+    <section class="booking">
+        <div class="header-image">
+            <img src="princess v1.jpeg">
+        <h2>Réserve un billet</h2>
+        <form id="bookingForm">
+            <label for="name">Nom complet:</label>
+            <input type="text" id="name" placeholder="Entrez votre nom" required>
+
+            <label for="phone">Numero de Telephone</label>
+            <input type="text" id="phone" placeholder="Ex:  6xxxxxxxx" required>
+
+            <label for="route">Choisir un Trajet:</label>
+            <select id="route" required>
+                <option value="Douala-Yaounde">Douala-Yaounde</option>
+                <option value="Yaoundé-Douala">Yaoundé-Douala</option>
+            </select>
+
+            <label for="payment">Mode de paiement</label>
+            <select id="payment" required>
+                <option value="mobile money" >Mobile Money</option>
+                <option value="orange money">Orange Money</option>
+            </select>
+
+            <button type="submit">Payer 4000 Xaf</button>
+        </form>
+    </section>
+    </main>
+    <!--Confimation ticket-->
+    <section id="confirmation" class="hidden">
+        <div id="ticket" class="ticket">
+            <h2> Princess Voyage - Ticket</h2>
+            <img id="" class="ticket-logo" alt="Logo paiement">
+
+            <div id="confirmMessage"></div>
+
+            <canvas id="qrCode"></canvas>
+        </div>
+        <button id="saveTicket" class="hidden">Enregistrez le ticket</button>
+    </section>
+<!--libraries-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

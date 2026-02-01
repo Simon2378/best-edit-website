@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="confirmation">
+        <div id="ticket" class="ticket">
+            <h2>Princess Voyage - Ticket</h2>
+            <p class="ticket-subtitle">THIS  IS YOUR TICKET AND SAVE JOURNEY</p>
+            <div id="confirmMessage"></div>
+            <p id="dateTime" class="ticket-date" aria-live="polite"></p>
+            <canvas id="qrCode"></canvas>
+        </div>
+        <button id="saveTicket"> Enregistrez Votre Ticket</button>
+    </section>
+
+    <!--The scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="ticket.js"></script>
+</body>
+</html>

@@ -53,6 +53,35 @@ label {
     display: block;
     margin-top: 12px;
 }
+
+.password-help {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #345b6f;
+}
+
+/* Payment logo preview */
+.payment-preview-wrap {
+    margin-top: 10px;
+}
+.payment-preview {
+    width: 90px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.payment-preview.hidden {
+    display: none;
+}
+.payment-help {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #345b6f;
+}
 input, select, button {
     width: 100%;
     padding: 12px;

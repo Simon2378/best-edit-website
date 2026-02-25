@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >Princess Voyage</title>
+    <title>Princess Voyage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +17,8 @@
         <h2>Princess Voyage</h2>
         <p>Réservez vos billets en ligne facilement</p>
     </header>
-<!--Bus time table-->
+
+    <!--Bus time table-->
     <section class="timetable">
         <h3>Horaires des bus</h3>
         <table>
@@ -32,57 +33,60 @@
                 <td>08:00</td>
             </tr>
             <tr>
-                <td>Yaounde</td>
+                <td>Yaoundé</td>
                 <td>Douala</td>
                 <td>14:00</td>
             </tr>
             <tr>
-                <td>Douala</td>
+                <td>Kribi</td>
                 <td>Douala</td>
                 <td>10:15</td>
-            </table>
+            </tr>
+        </table>
     </section>
 
     <main>
-    <section class="booking">
-        <div class="header-image">
-            <img src="princess v1.jpeg">
-        <h2>Réserve un billet</h2>
-        <form id="bookingForm">
-            <label for="name">Nom complet:</label>
-            <input type="text" id="name" placeholder="Entrez votre nom" required>
-
-            <label for="phone">Numero de Telephone</label>
-            <input type="text" id="phone" placeholder="Ex:  6xxxxxxxx" required>
-
-            <label for="route">Choisir un Trajet:</label>
-            <select id="route" required>
-                <option value="Douala-Yaounde">Douala-Yaounde</option>
-                <option value="Yaoundé-Douala">Yaoundé-Douala</option>
-            </select>
-
-            <label for="payment">Mode de paiement</label>
-            <select id="payment" required>
-                <option value="mobile money" >Mobile Money</option>
-                <option value="orange money">Orange Money</option>
-            </select>
-
-            <button type="submit">Payer 4000 Xaf</button>
-            <div class="payment-preview-wrap">
-                <img id="paymentPreview" class="hidden payment-preview" alt="Logo paiement">
-                <small id="paymentPreviewHelp" class="payment-help">("orange..png" ou "momo.jpeg"</small>
+        <section class="booking">
+            <div class="header-image">
+                <img src="princess v1.jpeg">
             </div>
-        </form>
-    </section>
+            <h2>Réserve un billet</h2>
+            <form id="bookingForm">
+                <label for="name">Nom complet:</label>
+                <input type="text" id="name" placeholder="Entrez votre nom" required>
+
+                <label for="phone">Numéro de Téléphone</label>
+                <input type="text" id="phone" placeholder="Ex: 6xxxxxxxx" required>
+
+                <label for="route">Choisir un Trajet:</label>
+                <select id="route" required>
+                    <option value="">Sélectionnez un trajet</option>
+                    <option value="Douala-Yaounde">Douala - Yaoundé</option>
+                    <option value="Yaounde-Douala">Yaoundé - Douala</option>
+                    <option value="Kribi-Douala">Kribi - Douala</option>
+                </select>
+
+                <label for="payment">Mode de paiement</label>
+                <select id="payment" required>
+                    <option value="">Sélectionnez un mode de paiement</option>
+                    <option value="Mobile Money">Mobile Money</option>
+                    <option value="Orange Money">Orange Money</option>
+                </select>
+
+                <button type="submit">Payer 4000 XAF</button>
+                <div class="payment-preview-wrap">
+                    <img id="paymentPreview" class="hidden payment-preview" alt="Logo paiement">
+                    <small id="paymentPreviewHelp" class="payment-help"></small>
+                </div>
+            </form>
+        </section>
     </main>
-    <!--Confimation ticket-->
+    <!--Confirmation ticket-->
     <section id="confirmation" class="hidden">
         <div id="ticket" class="ticket">
-            <h2> Princess Voyage - Ticket</h2>
-            <img id="" class="ticket-logo" alt="Logo paiement">
-
+            <h2>Princess Voyage - Ticket</h2>
+            <img id="ticketPaymentLogo" class="ticket-logo hidden" alt="Logo paiement">
             <div id="confirmMessage"></div>
-
             <canvas id="qrCode"></canvas>
         </div>
         <button id="saveTicket" class="hidden">Enregistrez le ticket</button>

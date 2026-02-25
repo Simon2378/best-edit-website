@@ -6,16 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="background-image: url('princess1.png'); background-size: cover; background-position: center;">
     <section id="confirmation">
-        <div id="ticket" class="ticket">
-            <h2>Princess Voyage - Ticket</h2>
-            <p class="ticket-subtitle">THIS  IS YOUR TICKET AND SAVE JOURNEY</p>
+        <div id="ticket" class="ticket" style="background: rgba(255,255,255,0.9); max-width:420px;">
+            <img id="ticketPaymentLogo" class="ticket-logo hidden" alt="Logo paiement">
+            <p id="ticketTagline">THIS IS YOUR TICKET AND SAVED JOURNEY IN JESUS NAME</p>
+            <div id="ticketDetails"></div>
+            <h2> Princess Voyage - Ticket</h2>
             <div id="confirmMessage"></div>
-            <p id="dateTime" class="ticket-date" aria-live="polite"></p>
+            <p id="dateTime" style="font-size:0.9em; color:#333; margin-top:8px;"></p>
             <canvas id="qrCode"></canvas>
         </div>
-        <button id="saveTicket"> Enregistrez Votre Ticket</button>
+        <button id="saveTicket">Enregistrez Votre Ticket</button>
     </section>
 
     <!--The scripts-->

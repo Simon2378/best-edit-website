@@ -58,3 +58,12 @@ document.getElementById("saveTicket").addEventListener("click", function () {
     link.click();
   });
 });
+
+// Back to start (replace current history so user starts fresh)
+const backBtn = document.getElementById('backToStart');
+if (backBtn) {
+  backBtn.addEventListener('click', function () {
+    // replace so the ticket page is removed from history
+    window.location.replace('index.html');
+  });
+}

@@ -129,3 +129,18 @@ button:hover {
     margin: 8px 0 6px;
     font-size: 0.95rem;
 }
+
+/* map container for package tracking */
+#packageMap {
+    margin: 20px auto;
+    max-width: 420px;
+}
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+/* weight input hidden by default styling (class already applied) */
+.hidden {
+    display: none;
+}

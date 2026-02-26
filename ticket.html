@@ -17,6 +17,10 @@
             <p id="dateTime" style="font-size:0.9em; color:#333; margin-top:8px;"></p>
             <canvas id="qrCode"></canvas>
         </div>
+        <div id="packageMap" class="hidden">
+            <h3>Suivi du colis</h3>
+            <div id="map" style="height:300px;width:100%;margin-top:10px;"></div>
+        </div>
         <button id="saveTicket">Enregistrez Votre Ticket</button>
         <button id="backToStart" class="secondary">Retour à l'accueil</button>
     </section>
@@ -24,6 +28,9 @@
     <!--The scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <!-- Leaflet for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-sA+o6f0DkQ4bTw1D7pvXx19qvuY5WX3h2I6JXcNdEV0=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-QV1PKBje0pk/iNuG+gHobyMIpvZb+eUu/uxM+50J+5w=" crossorigin=""></script>
     <script src="ticket.js"></script>
 </body>
 </html>

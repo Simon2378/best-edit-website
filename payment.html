@@ -11,10 +11,13 @@
   <section class="payment-box">
     <h2>💳 Confirmation Paiement</h2>
     <img id="paymentLogo" class="payment-preview" alt="Logo paiement">
-    <p>Veuillez entrer le code de confirmation envoyé par votre opérateur pour autoriser le retrait de <strong>4000 XAF</strong>.</p>
+    <p>Veuillez entrer le code de confirmation envoyé par votre opérateur pour autoriser le retrait de <strong id="amountText">4000 XAF</strong>.</p>
     <div class="payment-summary">
       <p><strong>Mode:</strong> <span id="paymentMethod">-</span></p>
-      <p><strong>Montant:</strong> 4000 XAF</p>
+      <p><strong>Type:</strong> <span id="summaryType">-</span></p>
+      <p class="hidden"><strong>Poids:</strong> <span id="summaryWeight">-</span></p>
+      <p><strong>Catégorie:</strong> <span id="summaryAge">-</span></p>
+      <p><strong>Montant:</strong> <span id="amountSummary">4000 XAF</span></p>
     </div>
     
     <form id="paymentForm">
@@ -27,7 +30,8 @@
     <!-- Simulation of SMS -->
     <div id="smsBox" class="hidden">
       <p> SMS envoyé au numéro <span id="smsNumber"></span> :</p>
-      <p><em>Confirmez le retrait de 4000 XAF pour votre ticket Princess Voyage.</em></p>
+      <p><em>Confirmez le retrait de <span id="smsAmount">4000 XAF</span> pour votre ticket Princess Voyage</em></p>
+      <p id="smsWeight" class="hidden"><em>Poids: <span id="smsWeightVal"></span> kg</em></p>
     </div>
   </section>
 

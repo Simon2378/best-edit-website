@@ -15,7 +15,7 @@ if (ticketType.toLowerCase() === 'vip') {
 } else if (ticketType === 'Colis') {
   amount = weight * 1500;
 } else {
-  amount = 4000;
+  amount = 6000;
 }
 
 // Show confirmation message

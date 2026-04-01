@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const w = parseFloat(weightInput.value) || 0;
       price = w * 1500;
     } else {
-      price = 4000;
+      price = 6000;
     }
     submitButton.textContent = `Payer ${price} XAF`;
   }
